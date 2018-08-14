@@ -1,0 +1,27 @@
+{
+  "name": "grokking-algorithms",
+  "version": "0.0.4",
+  "description": "Algorithms implemented on JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/esw src/**/*.js",
+    "watch": "jest --watch",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-watch": "^4.0.2",
+    "jest": "^23.4.2",
+    "regenerator-runtime": "^0.12.1"
+  }
+}
