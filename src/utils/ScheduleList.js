@@ -20,10 +20,10 @@ export default class ScheduleList {
   }
   /**
    * Add device to list
-   * @param {Number} hour
    * @param {String} deviceId
+   * @param {Number} hour
    */
-  add (hour, deviceId) {
+  add (deviceId, hour) {
     this.list[hour % ScheduleList.DAY_HOURS].push(deviceId)
     return this.list
   }

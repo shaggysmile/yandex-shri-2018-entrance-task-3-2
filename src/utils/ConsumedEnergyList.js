@@ -9,11 +9,12 @@ export default class ConsumedEnergyList {
   }
   /**
    * Add device to list
-   * @param {Object} device
+   * @param {String} deviceId
+   * @param {Number} devicePower
    * @param {Number} cost
    */
-  add (device, cost) {
-    this.devices[device.id] = this.calcCostPower(cost, device.power)
+  add (deviceId, devicePower, cost) {
+    this.devices[deviceId] = this.calcCostPower(cost, devicePower)
   }
   /**
    * Calc cost by power

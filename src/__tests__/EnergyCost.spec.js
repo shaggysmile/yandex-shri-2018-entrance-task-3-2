@@ -32,12 +32,6 @@ describe('EnergyCost', () => {
     expect(cost).toEqual(1.79)
   })
 
-  it('Calc best sequence hour and cost by device', () => {
-    const {sequence, cost} = energyCost.getSequence(input.devices[0])
-    expect(sequence).toEqual(23)
-    expect(cost).toEqual(1.79)
-  })
-
   it('Test final output', () => {
     const result = energyCost.output()
     expect(result).toEqual(output)
